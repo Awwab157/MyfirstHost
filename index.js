@@ -8,7 +8,17 @@ let est=-1;
 function Guess(){
     input=document.getElementById("guessbox").value;
     est=Number(input);
-    if (est>randnum){
+    if (input=="Awwab"){
+        document.getElementById("Comment").textContent=`Correct Guess: ${randnum}`;
+        if (tries==0){
+            score=100;
+        }
+        else{
+            score=100/tries;
+        }
+        document.getElementById("Score").textContent=`Your Score is: ${score}`;
+    }
+    else if (est>randnum){
         document.getElementById("Comment").textContent="Guess Lower";
         tries++;
     }
@@ -16,7 +26,7 @@ function Guess(){
         document.getElementById("Comment").textContent="Guess Upper";
         tries++;
     }
-    else if (est==randnum || input=="Awwab"){
+    else if (est==randnum){
         document.getElementById("Comment").textContent=`Correct Guess: ${randnum}`;
         if (tries==0){
             score=100;
