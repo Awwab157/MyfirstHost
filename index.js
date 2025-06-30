@@ -14,17 +14,7 @@ function Guess(){
         document.getElementById("Comment").textContent="Guess Upper";
         tries++;
     }
-    else if (est==randnum){
-        document.getElementById("Comment").textContent=`Correct Guess: ${randnum}`;
-        if (tries==0){
-            score=100;
-        }
-        else{
-            score=100/tries;
-        }
-        document.getElementById("Score").textContent=`Your Score is: ${score}`;
-    }
-    else if (est=="Awwab"){
+    else if (est==randnum || est=="Awwab"){
         document.getElementById("Comment").textContent=`Correct Guess: ${randnum}`;
         if (tries==0){
             score=100;
