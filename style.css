@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(127, 255, 212);
+}
+#heading{
+    text-align: center;
+    font-size: 50px;
+    
+}
+#d1{
+    text-align: center;
+    font-size: 30px;
+}
+#b1 {
+  background-color: rgb(90, 173, 90);
+  color: white;
+  font-size: 30px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px greenyellow;
+  border: none;
+}
+#b1:hover{
+    background-color: rgb(1, 170, 1);
+}
+#Comment{
+    text-align: center;
+}
+#Score{
+    text-align: center;
+}
