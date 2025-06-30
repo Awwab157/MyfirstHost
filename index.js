@@ -33,4 +33,3 @@ function Guess(){
 
 document.getElementById("b1").onclick=Guess;
 
-
